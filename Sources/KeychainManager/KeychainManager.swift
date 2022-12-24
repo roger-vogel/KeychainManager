@@ -6,10 +6,10 @@ public enum ValueType: Int { case integer, bool, double, float, string, failed }
 // Keychain entry container
 public struct KeyDescriptor {
     
-    var key: String
-    var value: Any?
-    var valueType: ValueType
-    var writeSuccess: Bool?
+    public var key: String
+    public var value: Any?
+    public var valueType: ValueType
+    public var writeSuccess: Bool?
 }
 
 public class KeyChainManager: NSObject {

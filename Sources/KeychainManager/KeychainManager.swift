@@ -161,7 +161,7 @@ public class KeyChainManager: NSObject {
     @discardableResult public func writeData (data: String , withKey: String) -> Bool { return KeychainWrapper.standard.set(data, forKey: withKey)  }
     
     // MARK: - CLEAR KEYCHAIN ENTRIES
-    func deleteKey (forKeys: [String]) {
+    public func deleteKey (forKeys: [String]) {
         
         for key in forKeys { KeychainWrapper.standard.removeObject(forKey: key) }
     }
